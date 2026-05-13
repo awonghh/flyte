@@ -1,16 +1,11 @@
-# Connection
+## Submit a job
 
 Inject your AWS credentials to Flyte pod so it can access S3.
 ```
 ./refresh_aws_credential_flyte.sh
 ```
 
-Set up connect to the kubernetes cluster
-```
-kubectl port-forward -n flyte deployment/flyte-backend-flyte-binary 8088:8088 8089:8089
-```
 
-## Submit
 ```
 ./submit.sh simple.py data_workflow
 ```
